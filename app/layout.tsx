@@ -1,23 +1,9 @@
 import React from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Poppins, Nunito } from "next/font/google";
 import type { Metadata } from "next";
 
-import "/app/styles/reset.css";
-import "/app/styles/globals.css";
-
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  weight: ["200", "900"],
-  subsets: ["latin"], // Specify subsets
-});
-
-const nunito = Nunito({
-  variable: "--font-nunito",
-  weight: ["200", "900"],
-  subsets: ["latin"], // Specify subsets
-});
+import '@styles/reset.css';
+import '@styles/globals.css';
 
 export const metadata: Metadata = {
   title: "TalentNovo - talent management platform",
@@ -47,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${nunito.variable}`}>
+      <body>
         {children}
       </body>
       <GoogleAnalytics gaId="G-XX8C2W7P1Z" />
