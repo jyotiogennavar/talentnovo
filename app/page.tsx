@@ -2,12 +2,23 @@
 
 // import styles from "@styles/homePage.module.css";
 
+import Navbar from "@components/Navbar/Navbar";
+import Header from "@components/Header/Header";
+import Features from "@components/Features/Features";
+import AboutUs from "@components/AboutUs/AboutUs";
+import WhyChooseUs from "@components/WhyChooseUs/WhyChooseUs";
+import Footer from "@components/Footer/Footer";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Transform Talent into Impact</h1>
-      <p >This is the home page, the content for this page is based on the facct that this is all fake and should not be taen into consideration</p>
-      {/* <Image src="/image.jpg" alt="Image" width={500} height={500} priority/> */}
-    </div>
+    <>
+      <Navbar />
+      <Header />
+      <Features />
+      <AboutUs />
+      <WhyChooseUs />
+      <Footer />
+
+    </>
   );
 }
