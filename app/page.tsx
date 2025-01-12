@@ -7,6 +7,7 @@ import Header from "@components/Header/Header";
 import Features from "@components/Features/Features";
 import AboutUs from "@components/AboutUs/AboutUs";
 import Mission from "@components/OurMission/Mission";
+import CTABanner from "@components/CTABanner/CTABanner";
 import Footer from "@components/Footer/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Mission />
       <Features />
       <AboutUs />
+      <CTABanner />
       <Footer />
 
     </>

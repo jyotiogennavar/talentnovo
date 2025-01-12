@@ -33,7 +33,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className={styles.copyrightContainer}>
           <p className={styles.copyright}>
-            &copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.
+            &copy; {new Date().getFullYear()} TalentNovo. All Rights Reserved.
           </p>
         </div>
       </div>

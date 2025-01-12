@@ -36,7 +36,7 @@ const AboutUs = () => {
       <div className={styles.aboutUsGrid}>
         <div className={styles.founderCard}>
           <div className={styles.founderText}>
-            <h4>Vikas</h4>
+            <p className={styles.founderName}>Vikas</p>
             <p>Co-founder</p>
             <p className={styles.founderDescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a
@@ -45,21 +45,23 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className={styles.founderImage}>
+            <div className={styles.founderImage}>
             <Image
               src={Arrow1}
               alt={AboutUsContent.imageAlt}
               width={100}
               height={50}
-              className={styles.arrowImage}
+              className={`${styles.arrowImage} ${styles.arrow1}`}
+              loading="lazy"
             />
             <Image
               src={FounderImage1}
               alt={AboutUsContent.imageAlt}
-              width={300}
+              width={280}
               height={400}
+              loading="lazy"
             />
-          </div>
+            </div>
         </div>
 
         <div className={styles.founderCard}>
@@ -69,20 +71,22 @@ const AboutUs = () => {
               alt={AboutUsContent.imageAlt}
               width={100}
               height={50}
-              className={styles.arrowImage}
+              className={`${styles.arrowImage} ${styles.arrow2}`}
+              loading="lazy"
             />
             <Image
               src={FounderImage2}
               alt={AboutUsContent.imageAlt}
-              width={300}
+              width={280}
               height={400}
+              loading="lazy"
             />
           </div>
           <div className={styles.founderText}>
-            <h4>Vikas Bhatia</h4>
+            <p className={styles.founderName}>Vikas Bhatia</p>
             <p>Co-founder</p>
             <p className={styles.founderDescription}>
-            Vikas has over 30 years of experience helping leaders and organizations achieve their full potential. An IIT Bombay graduate, he has conducted 150+ leadership programs and 3,000 hours of coaching across industries like tech, pharma, and manufacturing. 
+            Vikas has over 30 years of experience helping leaders and organizations achieve their full potential. An IIT Bombay graduate, he has conducted 150+ leadership programs and 3,000 hours of coaching across industries like tech, pharma, and manufacturing. <br />
             His mission is to empower leaders to navigate challenges and drive meaningful change.
             </p>
           </div>

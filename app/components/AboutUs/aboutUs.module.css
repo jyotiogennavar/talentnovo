@@ -32,7 +32,8 @@
   margin-top: 6rem;
 }
 
-.founderText h4 {
+.founderName{
+  font-family: var(--font-family-heading), sans-serif;
   font-size: var(--font-size-2xl);
   font-weight: 600;
   margin-bottom: var(--spacing-2);
@@ -49,6 +50,16 @@
 
 .arrowImage {
   position: absolute;
+}
+
+.arrow1 {
+  top: 150px;
+  left: -20px;
+}
+
+.arrow2 {
+  top: 56px;
+  right: -35px;
 }
 .founderText {
   width: 20rem;

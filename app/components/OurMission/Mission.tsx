@@ -19,9 +19,9 @@ const Mission = () => {
         <Image
           src={MissionImage}
           alt={missionContent.imageAlt}
-          layout="fill"
-          objectFit="cover"
-          priority
+          fill
+          
+          loading="lazy"
         />
       </div>
       <div className={styles.missionContent}>

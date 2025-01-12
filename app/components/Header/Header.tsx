@@ -34,7 +34,7 @@ const Header = () => {
             alt={headerContent.imageAlt}
             width={500}
             height={550}
-            priority
+            priority={true}
           />
         </div>
     </header>
