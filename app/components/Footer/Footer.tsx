@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './footer.module.css'; // Import the CSS module
+import Logo from '../../../public/images/logos/TalentNovoWhitelogo.svg'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         {/* Logo Section */}
         <div className={styles.logoContainer}>
           <Image
-            src="/logo.png" // Replace with your logo path
+            src={Logo} // Replace with your logo path
             alt="Logo"
             width={100}
             height={30}
@@ -26,9 +27,6 @@ const Footer = () => {
           </Link>
           <Link href="/contact" className={styles.link}>
             Contact
-          </Link>
-          <Link href="/privacy" className={styles.link}>
-            Privacy Policy
           </Link>
         </div>
 

@@ -1,7 +1,6 @@
 .footer {
-  background-color: #f8f9fa;
+  background-color: var(--color-gray-dark);
   padding: 20px 0;
-  border-top: 1px solid #e9ecef;
 }
 
 .container {
@@ -25,14 +24,10 @@
 
 .link {
   text-decoration: none;
-  color: #007bff;
-}
-
-.link:hover {
-  text-decoration: underline;
+  color: var(--color-white);
 }
 
 .copyrightContainer {
   font-size: 14px;
-  color: #6c757d;
+  color: var(--color-white);
 }

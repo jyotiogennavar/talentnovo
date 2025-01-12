@@ -1,0 +1,63 @@
+.container {
+  padding: var(--body-padding);
+}
+
+.aboutUsContent {
+  display: flex;
+  align-items: end;
+
+  gap: 2rem;
+}
+
+.aboutUsContent h2 {
+
+  margin-bottom: 0;
+}
+
+.textWrapper {
+  width: 90ch;
+}
+
+
+
+.textWrapper p {
+  font-size: var(--font-size-lg);
+}
+
+.aboutUsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  margin-top: 6rem;
+}
+
+.founderText h4 {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+}
+
+.founderCard {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.founderImage {
+  position: relative;
+}
+
+.arrowImage {
+  position: absolute;
+}
+.founderText {
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.founderDescription {
+  margin-top: var(--spacing-2);
+  color: var(--color-gray-dark);
+}

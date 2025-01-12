@@ -1,8 +1,7 @@
 /* components/navbar.module.css */
 .navbar {
-  background-color: #fff;
-  padding: .5rem var(--main-padding);
-  /* position: fixed; */
+  background-color: var(--color-white);
+  padding: .5rem var(--body-padding);
   width: 100%;
   top: 0;
   z-index: 1000;

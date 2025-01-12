@@ -1,5 +1,5 @@
 .container {
-  padding: var(--main-padding);
+  padding: var(--body-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,8 +11,17 @@
   gap: 1rem;
 }
 
+.heroContent h1 span {
+  color: var(--color-black);
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;  /* Clip background to the text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  background-clip: text; /* Fallback for non-WebKit browsers */
+}
+
 .heroContent p {
-  font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+  max-width: 35rem;
+  font-size: var(--font-size-lg);
   font-weight: 400;
 }
 
@@ -20,3 +29,24 @@
   width: 70%;
 }
 
+.heroButton {
+  width: 16rem;
+  padding: 1rem 2rem;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-blue-400);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.heroButton:hover {
+  background-color: var(--color-blue-300);
+}
+
+.heroImageWrapper {
+  display: flex;
+  justify-content: center;
+}

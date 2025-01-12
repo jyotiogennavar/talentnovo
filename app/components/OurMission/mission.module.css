@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.missionImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.missionImageWrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.missionImageWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(228, 50%, 33%, 78%);
+  z-index: 2;
+}
+
+.missionContent {
+  position: relative;
+  z-index: 3; /* Ensure the content is above the image and overlay */
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  text-align: left;
+  color: #ffffff; /* Adjust text color as needed */
+}
+
+.missionContent span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.missionContent h2 {
+  font-size: 2.625rem; /* 42px converted to rem */
+  margin: 0;
+}

@@ -14,37 +14,38 @@ const featureHeaderContent: { title: string; description: string } = {
 const featureCards: { title: string; description: string; iconSrc: string }[] =
   [
     {
-      title: "Talent Management Solutions",
-      description:
-        "We design strategies that align with your business goals and make the most of your team’s unique strengths. Let us help you create a culture where everyone can thrive.",
-      iconSrc: "/images/icons/feature-1.svg",
-    },
-    {
-      title: "Workforce Transformation",
-      description:
-        "Change is inevitable. Build resilient teams that deliver outstanding results, even in challenging environments.",
-      iconSrc: "/images/icons/feature-2.svg",
-    },
-    {
       title: "Leadership Development",
       description:
-        "Great leaders drive great organizations. We help you identify and nurture leaders who inspire their teams and achieve meaningful outcomes.",
-      iconSrc: "/images/icons/feature-3.svg",
+        "Equip leaders with the skills and confidence to inspire and succeed. Leaders leave with practical strategies they can apply immediately to drive results and build high-performing teams.",
+      iconSrc: "/images/icons/up-arrow.svg",
     },
     {
-      title: "Employee Engagement",
+      title: "Strategic Coaching & Mentoring",
       description:
-        "Motivated employees are the heart of a thriving workplace. We’ll help you create an environment where people feel valued, connected, and driven to succeed.",
-      iconSrc: "/images/icons/feature-4.svg",
+        "Empower teams to collaborate effectively and achieve shared goals. Our programs help teams perform at their best by addressing group dynamics and fostering collective growth.",
+      iconSrc: "/images/icons/compass.svg",
+    },
+    {
+      title: "Shaping Workplace Culture",
+      description:
+        "Shape a strong, collaborative workplace culture aligned with your goals. We help create environments where innovation and productivity flourish by fostering trust and engagement.",
+      iconSrc: "/images/icons/connect.svg",
+    },
+    {
+      title: "Talent Profiling & Assessment",
+      description:
+        "Use advanced tools to identify strengths, challenges, and potential. Our assessments provide actionable data that supports recruitment, development, and succession planning.",
+      iconSrc: "/images/icons/magnifying-glass.svg",
     },
   ];
 
 const Features = () => {
   return (
-    <section>
+    <section className={styles.container}>
       {/* Header Section */}
+
       <div className={styles.textWrapper}>
-        <span>Features</span>
+        <span className="sectionHeading">Features</span>
         <h2>{featureHeaderContent.title}</h2>
         <p>{featureHeaderContent.description}</p>
       </div>
@@ -52,15 +53,18 @@ const Features = () => {
       {/* Features Grid */}
       <div className={styles.featuresGrid}>
         {featureCards.map((feature, index) => (
-          <div key={index} className={styles.feature}>
+          <div key={index} className={styles.featureCard}>
             <Image
               src={feature.iconSrc}
               alt={feature.title}
-              width={100}
-              height={100}
+              className={styles.featureIcon}
+              width={200}
+              height={200}
             />
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
+            <div className={styles.featureContent}>
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+            </div>
           </div>
         ))}
       </div>

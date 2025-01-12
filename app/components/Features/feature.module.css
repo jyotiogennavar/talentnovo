@@ -1,0 +1,57 @@
+.container {
+  padding: var(--body-padding);
+}
+
+.textWrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.textWrapper p {
+  font-size: var(--font-size-lg);
+}
+
+.featuresGrid {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+
+
+
+}
+
+.featureCard {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--light-blue-gradient);
+  height: 16rem;
+  position: relative;
+}
+
+.featureIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+
+.featureContent  {
+  position: relative;
+  z-index: 1;
+}
+
+.featureContent p {
+  font-size: var(--font-size-lg);
+
+}

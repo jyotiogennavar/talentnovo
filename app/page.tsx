@@ -6,7 +6,7 @@ import Navbar from "@components/Navbar/Navbar";
 import Header from "@components/Header/Header";
 import Features from "@components/Features/Features";
 import AboutUs from "@components/AboutUs/AboutUs";
-import WhyChooseUs from "@components/WhyChooseUs/WhyChooseUs";
+import Mission from "@components/OurMission/Mission";
 import Footer from "@components/Footer/Footer";
 
 export default function Home() {
@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <Navbar />
       <Header />
+      <Mission />
       <Features />
       <AboutUs />
-      <WhyChooseUs />
       <Footer />
 
     </>
