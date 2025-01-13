@@ -55,3 +55,19 @@
   font-size: 2.625rem; /* 42px converted to rem */
   margin: 0;
 }
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 26rem;
+  }
+
+  .missionContent {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .missionContent h2 {
+    font-size: 1.875rem; /* 32px converted to rem */
+  }
+}

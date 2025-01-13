@@ -130,7 +130,7 @@
 
   --border-radius: 0.25rem; /* 4px */
 
-  --body-padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 7vw, 7rem);
+  --body-margin: clamp(2rem, 4vw, 4rem) clamp(1rem, 7vw, 7rem);
 }
 
 
@@ -161,16 +161,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: clamp(
-    2.5rem,
+    3rem,
     5vw + 1rem,
     4rem
   );
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
   font-size: clamp(
-    2rem,
+    1.875rem,
     5vw + 0.5rem,
     2.625rem
   );

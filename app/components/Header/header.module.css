@@ -1,5 +1,5 @@
 .container {
-  padding: var(--body-padding);
+  margin: var(--body-margin);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,6 +52,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .heroImageWrapper img{
     display: none;
   }
