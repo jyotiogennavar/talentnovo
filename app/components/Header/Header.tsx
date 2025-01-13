@@ -35,6 +35,7 @@ const Header = () => {
             width={500}
             height={550}
             priority={true}
+            layout="responsive"
           />
         </div>
     </header>
