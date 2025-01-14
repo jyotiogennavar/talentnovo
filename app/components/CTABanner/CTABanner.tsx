@@ -13,7 +13,14 @@ const CTABanner = () => {
             here to guide you every step of the way. Together, let’s create a
             future-ready workforce.
           </p>
-          <button className={styles.ctaButton}>Schedule A Call</button>
+          <a
+            href="mailto:vikasb@talentnovo.com"
+            className={styles.ctaButton}
+            aria-label="Schedule a Call"
+          >
+            Schedule A Call
+          </a>
+          {/* <button className={styles.ctaButton}>Schedule A Call</button> */}
         </div>
       </div>
     </section>

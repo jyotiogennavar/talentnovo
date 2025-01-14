@@ -41,11 +41,11 @@ const featureCards: { title: string; description: string; iconSrc: string }[] =
 
 const Features = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="features">
       {/* Header Section */}
 
       <div className={styles.textWrapper}>
-        <span className="sectionHeading">Features</span>
+        <span className="sectionHeading">How we help</span>
         <h2>{featureHeaderContent.title}</h2>
         <p>{featureHeaderContent.description}</p>
       </div>

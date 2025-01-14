@@ -46,6 +46,20 @@
 }
 
 @media (max-width: 768px) {
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .container {
+    gap: 1rem;
+  }
+
+  .logo a {
+    font-size: var(--font-size-sm);
+  }
+
+  
   .menuToggle {
     display: block;
   }

@@ -130,7 +130,10 @@
 
   --border-radius: 0.25rem; /* 4px */
 
-  --body-margin: clamp(2rem, 4vw, 4rem) clamp(1rem, 7vw, 7rem);
+  /* --body-margin: clamp(2rem, 4vw, 10rem) ; */
+
+  --vertical-margin: clamp(1rem, 7vw, 7rem);
+  --horizontal-margin: clamp(2rem, 7vw, 10rem);
 }
 
 
@@ -149,7 +152,7 @@ body {
   background-image: 
     linear-gradient(90deg, hsla(0, 0%, 78%, 0.2) 1px, transparent 1px),
     linear-gradient(hsla(0, 0%, 78%, 0.2) 1px, transparent 1px);
-  background-size: 50px 50px; /* Adjust grid spacing */
+  background-size: 60px 60px; /* Adjust grid spacing */
   }
   
 

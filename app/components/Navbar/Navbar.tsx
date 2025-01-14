@@ -2,45 +2,41 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+// import { useState } from 'react';
 import styles from './navbar.module.css';
 
 import Logo from '../../../public/images/logos/TalentNovoLogo.svg'
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/">
-              <Image src={Logo} alt="logo" width={100} height={50} />
+              <Image src={Logo} alt="logo" width={80} height={60} />
           </Link>
         </div>
-        <button className={styles.menuToggle} onClick={toggleMenu}>
+        {/* <button className={styles.menuToggle} onClick={toggleMenu}>
           {isMenuOpen ? 'Close' : 'Menu'}
-        </button>
-        <ul className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
+        </button> */}
+        <ul className={`${styles.navLinks}`}>
+        <li>
+            <Link href="#features">
+              Our Services
+            </Link>
+          </li>
           <li>
             <Link href="#about-us">
               About Us
             </Link>
           </li>
-          <li>
-            <Link href="#our-services">
-              Our Services
-            </Link>
-          </li>
-          <li>
-            <Link href="#why-choose-us">
-              Why Choose Us
-            </Link>
-          </li>
+    
         </ul>
       </div>
     </nav>

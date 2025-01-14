@@ -1,5 +1,5 @@
 .container {
-  margin: var(--body-margin);
+  margin: var(--horizontal-margin) var(--vertical-margin);
 }
 
 .aboutUsContent {
@@ -26,7 +26,8 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 
-  margin-top: 6rem;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
 }
 
 .founderName {
@@ -41,23 +42,24 @@
   gap: 1.2rem;
 }
 
-.founderImage {
+/* .founderImageWrapper {
   position: relative;
+} */
+
+.founderImageBorder {
+  position: relative;
+  display: inline-block; /* Ensures the wrapper is sized to the image */
+  background: var(--dark-blue-gradient); /* Gradient border */
+  padding: 3px; /* Width of the border */
+  border-radius: 12px; /* Optional for rounded corners */
 }
 
-.arrowImage {
-  position: absolute;
+.founderImage {
+  display: block;
+  border-radius: 10px; /* Match or slightly smaller than the wrapper radius */
+  background-color: #fff; /* Fallback for transparent image areas */
 }
 
-.arrow1 {
-  top: 150px;
-  left: -20px;
-}
-
-.arrow2 {
-  top: 56px;
-  right: -35px;
-}
 .founderText {
   width: 20rem;
 

@@ -2,10 +2,8 @@ import React from "react";
 import Image from "next/image";
 import styles from "./aboutUs.module.css";
 
-import FounderImage1 from "../../../public/images/homePage/founder-image-1.png";
-import FounderImage2 from "../../../public/images/homePage/founder-image-2.png";
-import Arrow1 from "../../../public/images/homePage/arrow1.svg";
-import Arrow2 from "../../../public/images/homePage/arrow2.svg";
+import FounderImage1 from "../../../public/images/homePage/vikas.webp";
+import FounderImage2 from "../../../public/images/homePage/vivek.webp";
 
 const AboutUsContent: {
   title: string;
@@ -34,60 +32,49 @@ const AboutUs = () => {
       </div>
 
       <div className={styles.aboutUsGrid}>
+        
         <div className={styles.founderCard}>
           <div className={styles.founderText}>
-            <p className={styles.founderName}>Vikas</p>
-            <p>Co-founder</p>
+            <p className={styles.founderName}>Vikas Bhatia</p>
+            <p>Founder & Leadership Coach</p>
             <p className={styles.founderDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a
-              ex mollis, porta mauris sit amet, commodo sapien. Fusce vel
-              facilisis enim. Etiam scelerisque dapibus tellus vitae rhoncus. 
+            Vikas has over 30 years of experience helping leaders and organizations achieve their full potential. An IIT Bombay graduate, he has conducted 150+ leadership programs and 3,000 hours of coaching across industries like tech, pharma, and manufacturing. <br /> His mission is to empower leaders to navigate challenges and drive meaningful change. 
             </p>
           </div>
 
-            <div className={styles.founderImage}>
-            <Image
-              src={Arrow1}
-              alt={AboutUsContent.imageAlt}
-              width={100}
-              height={50}
-              className={`${styles.arrowImage} ${styles.arrow1}`}
-              loading="lazy"
-            />
-            <Image
+          <div className={styles.founderImageWrapper}>
+            <div className={styles.founderImageBorder}>
+              <Image
               src={FounderImage1}
               alt={AboutUsContent.imageAlt}
               width={280}
               height={400}
               loading="lazy"
+              className={styles.founderImage}
             />
             </div>
+            
+          </div>
         </div>
 
         <div className={styles.founderCard}>
-          <div className={styles.founderImage}>
-          <Image
-              src={Arrow2}
-              alt={AboutUsContent.imageAlt}
-              width={100}
-              height={50}
-              className={`${styles.arrowImage} ${styles.arrow2}`}
-              loading="lazy"
-            />
-            <Image
-              src={FounderImage2}
-              alt={AboutUsContent.imageAlt}
-              width={280}
-              height={400}
-              loading="lazy"
-            />
+          <div className={styles.founderImageWrapper}>
+            <div className={styles.founderImageBorder}>
+              <Image
+                src={FounderImage2}
+                alt={AboutUsContent.imageAlt}
+                width={280}
+                height={400}
+                loading="lazy"
+                className={styles.founderImage}
+              />
+            </div>
           </div>
           <div className={styles.founderText}>
-            <p className={styles.founderName}>Vikas Bhatia</p>
-            <p>Co-founder</p>
+            <p className={styles.founderName}>Vivek Mohile</p>
+            <p>Founder & Leadership Coach</p>
             <p className={styles.founderDescription}>
-            Vikas has over 30 years of experience helping leaders and organizations achieve their full potential. An IIT Bombay graduate, he has conducted 150+ leadership programs and 3,000 hours of coaching across industries like tech, pharma, and manufacturing. <br />
-            His mission is to empower leaders to navigate challenges and drive meaningful change.
+            With over two decades of corporate experience at companies like Infosys and Hewlett Packard, Vivek specializes in leadership development and organizational transformation. As a certified Gallup Strengths Coach and SAFe Program Consultant, he blends industry expertise with innovative methodologies to drive meaningful change. <br /> Vivek’s mission is to help leaders and teams unlock their potential while fostering growth, collaboration, and well-being.
             </p>
           </div>
         </div>

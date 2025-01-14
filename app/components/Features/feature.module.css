@@ -1,5 +1,5 @@
 .container {
-  margin: var(--body-margin);
+  margin: var(--horizontal-margin) var(--vertical-margin);
 }
 
 .textWrapper {

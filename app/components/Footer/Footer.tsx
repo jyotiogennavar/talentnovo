@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import styles from './footer.module.css'; // Import the CSS module
 import Logo from '../../../public/images/logos/TalentNovoWhitelogo.svg'
 
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         {/* Links Section */}
-        <div className={styles.linksContainer}>
+        {/* <div className={styles.linksContainer}>
           <Link href="/about" className={styles.link}>
             About
           </Link>
@@ -28,7 +28,7 @@ const Footer = () => {
           <Link href="/contact" className={styles.link}>
             Contact
           </Link>
-        </div>
+        </div> */}
 
         {/* Copyright Section */}
         <div className={styles.copyrightContainer}>
