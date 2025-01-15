@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/">
-              <Image src={Logo} alt="logo" width={80} height={60} />
+              <Image src={Logo} alt="logo" width={80} height={60} priority />
           </Link>
         </div>
         {/* <button className={styles.menuToggle} onClick={toggleMenu}>
