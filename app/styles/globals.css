@@ -134,6 +134,8 @@
 
   --vertical-margin: clamp(1rem, 7vw, 7rem);
   --horizontal-margin: clamp(2rem, 7vw, 10rem);
+  --vertical-page-margin: clamp(1rem, 7vw, 10rem);
+  --horizontal-page-margin: clamp(2rem, 7vw, 2rem);
 }
 
 
@@ -152,7 +154,7 @@ body {
   background-image: 
     linear-gradient(90deg, hsla(0, 0%, 78%, 0.2) 1px, transparent 1px),
     linear-gradient(hsla(0, 0%, 78%, 0.2) 1px, transparent 1px);
-  background-size: 60px 60px; /* Adjust grid spacing */
+  background-size: 60px 60px; 
   }
   
 
