@@ -1,20 +1,13 @@
 import Navbar from "@components/Navbar/Navbar";
 import Footer from "@components/Footer/Footer";
 import CTABanner from "@components/CTABanner/CTABanner";
-import Head from "next/head";
 import Image from "next/image";
 
 import styles from "@styles/offerings.module.css";
 
-
-
 export default function Offering1() {
   return (
     <>
-    <Head>
-      <title></title>
-      <meta name="description" content="" />
-    </Head>
       <Navbar />
         <header className={styles.header}>
           <div className={styles.videoWrapper}>
@@ -70,7 +63,7 @@ export default function Offering1() {
             </p>
           </div>
 
-          <section className={styles.featureGrid}>
+          <div className={styles.featureGrid}>
             <div className={styles.featureCard}>
               <Image
                 src="/images/icons/check.svg"
@@ -156,7 +149,7 @@ export default function Offering1() {
                 talent management.
               </p>
             </div>
-          </section>
+          </div>
         </section>
 
 

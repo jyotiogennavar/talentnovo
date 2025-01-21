@@ -167,6 +167,28 @@
 }
 
 
+.edgeGrid {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 1rem;
+}
+
+.cultureGrid {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.whyWrapper {
+  margin: 5rem 10rem;
+}
+
+.whyWrapper p {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-2);
+}
 @media (max-width: 786px) {
   .content {
     margin-left: 0;
@@ -225,5 +247,31 @@
       "g5"
       "g6"
       "g7";
+  }
+
+  .edgeGrid {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cultureGrid {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .whyWrapper {
+    margin: 5rem 1rem;
+  }
+
+  .whyWrapper p {
+    font-size: 1rem;
+  }
+
+  .featureCard {
+    padding: 1rem;
   }
 }
