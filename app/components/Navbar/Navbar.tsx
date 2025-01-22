@@ -51,9 +51,6 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li>
-            <Link href="#about-us">About Us</Link>
-          </li>
         </ul>
       </div>
     </nav>
