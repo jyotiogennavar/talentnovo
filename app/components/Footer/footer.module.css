@@ -13,21 +13,31 @@
 }
 
 .logoContainer {
+  margin-top: 1rem;
   margin-bottom: 10px;
 }
 
 .linksContainer {
   display: flex;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 .link {
+  font-size: 1rem;
   text-decoration: none;
   color: var(--color-white);
 }
 
 .copyrightContainer {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--color-white);
+}
+
+
+@media screen and (max-width: 768px) {
+  .linksContainer {
+    flex-direction: column;
+  }
 }

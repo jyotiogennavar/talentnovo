@@ -1,7 +1,7 @@
-import Image from 'next/image';
-// import Link from 'next/link';
-import styles from './footer.module.css'; // Import the CSS module
-import Logo from '../../../public/images/logos/TalentNovoWhitelogo.svg'
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./footer.module.css"; // Import the CSS module
+import Logo from "../../../public/images/logos/TalentNovoWhitelogo.svg";
 
 const Footer = () => {
   return (
@@ -18,17 +18,32 @@ const Footer = () => {
         </div>
 
         {/* Links Section */}
-        {/* <div className={styles.linksContainer}>
-          <Link href="/about" className={styles.link}>
-            About
+        <div className={styles.linksContainer}>
+          <Link
+            href="/offerings/talent-profiling-and-assessment"
+            className={styles.link}
+          >
+            Talent Profiling
           </Link>
-          <Link href="/services" className={styles.link}>
-            Services
+          <Link
+            href="/offerings/leadership-development"
+            className={styles.link}
+          >
+            Leadership Development
           </Link>
-          <Link href="/contact" className={styles.link}>
-            Contact
+          <Link
+            href="/offerings/strategic-coaching-and-mentoring"
+            className={styles.link}
+          >
+            Strategic Coaching
           </Link>
-        </div> */}
+          <Link
+            href="/offerings/culture-and-organizational-development"
+            className={styles.link}
+          >
+            Cultural Development
+          </Link>
+        </div>
 
         {/* Copyright Section */}
         <div className={styles.copyrightContainer}>
