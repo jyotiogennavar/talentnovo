@@ -34,7 +34,7 @@ const Navbar = () => {
         <ul className={`${styles.navLinks} ${isMenuOpen ? styles.open : ""}`}>
           <li className={styles.dropdown}>
             <button onClick={toggleServices} className={styles.dropdownToggle}>
-              Our Services <ChevronDown size={16} />
+              Our Offerings <ChevronDown size={16} />
             </button>
             <ul className={`${styles.dropdownMenu} ${isServicesOpen ? styles.open : ""}`}>
               <li>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 <Link href="/offerings/strategic-coaching-and-mentoring">Strategic Coaching</Link>
               </li>
               <li>
-                <Link href="/offerings/culture-and-organizational-development">Cultural Development</Link>
+                <Link href="/offerings/culture-and-organizational-development">Cultural & Organizational Development</Link>
               </li>
             </ul>
           </li>
